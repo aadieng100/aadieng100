@@ -50,6 +50,6 @@ A resilient, highly available headless E-Commerce REST API cluster built on an i
 ---
 
 ### 📬 Connect With Me
-* **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
-* **Email:** [your.email@example.com](mailto:your.email@example.com)
+* **LinkedIn:** [linkedin.com/in/aadieng](https://linkedin.com/in/aadieng)
+* **Email:** [diengabdoulaziz110@gmail.com](mailto:diengabdoulaziz110@gmail.com)
 * **Location:** Dakar, Senegal (Open to local, hybrid, and international remote opportunities)
