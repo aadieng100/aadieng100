@@ -1,55 +1,82 @@
 # Abdoul Aziz Dieng
-### Software Engineer & Technology Entrepreneur • DevSecOps & Cloud Infrastructure Specialist
+### DevSecOps Engineer | Cloud Infrastructure | Application Security
+📍 Dakar, Senegal • 🌍 Open to Remote & International Opportunities
 
-Backend Engineer and Technology Entrepreneur with an elite focus on building secure-by-design distributed systems, high-availability cloud infrastructure, and fully automated DevSecOps pipelines. Grounded in advanced defensive security methodologies and backed by the **Google Cybersecurity Professional Certification**, I specialize in shifting security left—integrating automated SAST/SCA/IaC scanning, dynamic fuzzing, and rigid IAM access controls directly into the engineering lifecycle.
+Software Engineer specializing in DevSecOps, cloud infrastructure, and application security. I design and implement secure AWS environments, automate infrastructure provisioning with Terraform, and integrate security controls throughout the software delivery lifecycle.
+
+My work centers on building secure-by-default systems by combining Infrastructure as Code (IaC), CI/CD automation, cloud-native security controls, container hardening, and continuous security validation.
+
+Recently completed the **Google Cybersecurity Professional Certificate** and actively building production-inspired DevSecOps platforms focused on security, automation, observability, and operational resilience.
 
 ---
 
-### 🛠️ Core Engineering & Security Stack
+### 🛠️ Core Technologies
 
-| Layer | Technologies & Frameworks |
+| Category | Stack |
 | :--- | :--- |
-| **Backend & Systems** | Java (Spring Boot 3), PostgreSQL, Linux (Bash), REST APIs |
-| **Cloud & Infrastructure** | AWS (VPC, EC2, ALB, S3, RDS), Infrastructure as Code (Terraform) |
-| **DevSecOps & Automation** | Docker, CI/CD Pipelines, Git GitHub Actions, Pre-Commit Framework |
-| **Security Automation** | Semgrep (SAST), Trivy (SCA), Checkov (IaC), OWASP ZAP (DAST), Gitleaks, Trufflehog |
+| **Cloud & Infrastructure** | AWS (VPC, EC2, ALB, RDS, S3, KMS, IAM, Secrets Manager), Terraform |
+| **DevSecOps & Automation** | GitHub Actions, Docker, CI/CD pipelines, OIDC Federation, Checkov, Pre-Commit Framework |
+| **Security Engineering** | Semgrep (SAST), Trivy (SCA & Container Scanning), OWASP ZAP (DAST), Gitleaks, Trufflehog |
+| **Backend Engineering** | Java, Spring Boot, PostgreSQL, REST APIs |
+| **Monitoring & Reliability** | Prometheus, Grafana, Linux, Bash |
 
 ---
 
-### 🚀 Featured DevSecOps Portfolio Projects
+### 🚀 Featured Projects
 
-#### 01. Ephemeral Cloud Security Pipeline (Entry-Level Archetype)
-🔗 **[Source Code & Pipeline](https://github.com/aadieng100/devsecops_project01)** | 🛠️ **[CI/CD Workflow Configuration](https://github.com/aadieng100/devsecops_project01/tree/master/.github/workflows)**
-An automated, isolated test-and-destroy AWS pipeline engineering a secure runtime environment for a modern Java application, prioritizing programmatic secrets management and comprehensive vulnerability feedback loops.
+#### 01. Secure Application Delivery Pipeline on AWS
+🔗 **[Source Code](https://github.com/aadieng100/devsecops_project01)** | 🛠️ **[Pipeline Workflow](https://github.com/aadieng100/devsecops_project01/tree/master/.github/workflows)**
 
-* **Architecture & Flow:** Deployed a Java/Spring Boot 3 application coupled with a Dockerized PostgreSQL database on an AWS instance. Implemented strict IAM Instance Profiles to dynamically extract runtime credentials from AWS Secrets Manager, eliminating hardcoded environment variables.
-* **Security Automation Gate:** Integrated a multi-layered scanning suite into the pipeline execution phase:
-  * **SAST & SCA:** Executed **Semgrep** for source-code analysis and **Trivy** for container vulnerability assessment.
-  * **IaC Auditing:** Utilized **Checkov** to enforce security compliance on Terraform manifests prior to deployment.
-  * **Live DAST Fuzzing:** Orchestrated a live web application scan using **OWASP ZAP** against the active container runtime.
-* **Feedback & Teardown:** Engineered an automated failure mechanism that parses security scan outputs, programmatically generates structured threat logs directly to **GitHub Issues**, and executes a fail-safe `terraform destroy` sequence to minimize attack surface and cloud spend.
+**Overview**  
+Designed and implemented an automated DevSecOps delivery pipeline for a Java application running on AWS. The platform integrates multiple security validation layers directly into the development workflow, ensuring vulnerabilities are detected before deployment.
 
-#### 02. High-Availability Multi-Tier E-Commerce Cluster (Intermediate-Level Archetype)
-🔗 **[Source Code](https://github.com/aadieng100/devsecops_project02)** | 📐 **[Terraform Architecture Files](https://github.com/aadieng100/devsecops_project02/tree/main/terraform)**
-A resilient, highly available headless E-Commerce REST API cluster built on an immutable infrastructure model, enforcing absolute network isolation and edge-to-core security.
+**Key Capabilities & Security Highlights**
+* **Infrastructure as Code:** Complete infrastructure provisioning handled declaratively through **Terraform**.
+* **Identity & Access:** Configured secure, keyless AWS authentication utilizing **GitHub OIDC federation** to eliminate long-lived credentials.
+* **Static Analysis & SCA:** Embedded **Semgrep** for application source-code analysis and **Trivy** for deep software composition analysis and container scanning.
+* **Policy enforcement:** Utilized **Checkov** to execute static security validation on Terraform manifests prior to cloud deployment.
+* **Dynamic Testing & Feedback:** Automated **OWASP ZAP** dynamic scans against the active runtime environment, engineering automated issue creation and security reporting.
+* **Lifecycle Management:** Orchestrated an ephemeral test environment using automated deployment and destruction workflows to minimize attack surface and reduce cloud spend.
 
-* **Infrastructure-as-Code (IaC):** Architected a production-grade AWS environment using an immutable **Terraform** codebase. Managed environments via a **dual-track S3 Remote State** architecture, completely separating volatile staging workspaces from persistent production state files.
-* **Network Isolation & Scalability:** Designed an isolated VPC architecture hosting application nodes within **zero-inbound private subnets**. Inbound traffic is strictly funneled through an internet-facing **AWS Application Load Balancer (ALB)** acting as the secure edge gateway.
-* **Data Layer Security:** Provisioned a highly available, replicated **Amazon RDS PostgreSQL** cluster. Enforced encryption-at-rest across the database tier using **AWS KMS Customer Managed Keys (CMK)** with strict key rotation policies.
-* **Shift-Left Shift-Right Security:**
-  * **Local Pre-Commit Guardrails:** Established a localized **pre-commit framework** across developer environments running **Gitleaks** and **Trufflehog** to block accidental credential leaks before they ever reach the remote repository.
-  * **Edge DAST Profiling:** Configured targeted **OWASP ZAP** fuzzing routines pointing directly at the ALB edge gateway to stress-test routing rules and application layers against complex web vectors.
+#### 02. High-Availability Multi-Tier Cloud Platform
+🔗 **[Source Code](https://github.com/aadieng100/devsecops_project02)** | 📐 **[Terraform Architecture](https://github.com/aadieng100/devsecops_project02/tree/main/terraform)**
+
+**Overview**  
+Architected a multi-tier AWS environment designed around secure networking principles, infrastructure immutability, and encrypted data services.
+
+**Key Capabilities & Security Highlights**
+* **State Isolation:** Infrastructure fully managed through **Terraform** utilizing a multi-environment deployment strategy backed by remote state management via **Amazon S3**.
+* **Network Segregation:** Designed a strict private subnet architecture, placing application nodes and database layers behind an internet-facing **AWS Application Load Balancer (ALB)**.
+* **Data Protection:** Provisioned a highly available **Amazon RDS PostgreSQL** deployment with encryption-at-rest enforced via **AWS KMS Customer-Managed Keys**.
+* **Secret Leak Prevention:** Integrated the **pre-commit framework** executing **Gitleaks** and **Trufflehog** locally to block credential exposure prior to code commits.
+* **Edge Edge Profiling:** Conducted targeted **OWASP ZAP** security profiling directly against exposed load balancer endpoints.
 
 ---
 
-### 📊 Professional Metrics & Impact Focus
-* **Zero Trust Architectures:** Enforcing least-privilege access patterns across AWS IAM policies and database connection strings.
-* **Immutable Infrastructure:** Eliminating configuration drift by treating infrastructure as code, ensuring predictability from local staging up to production environments.
-* **Vulnerability Remediation:** Accelerating feedback loops for software engineers by embedding vulnerability payloads natively into development workflows.
+### 🧠 Engineering Principles
+
+* **Security by Design:** Security controls are integrated from development through deployment rather than added after implementation.
+* **Infrastructure as Code:** Cloud infrastructure is version-controlled, repeatable, and auditable through Terraform.
+* **Automation First:** Manual operational processes are minimized through CI/CD pipelines, policy enforcement, and automated validation.
+* **Observability:** Systems are monitored using metrics, dashboards, and alerts to support reliability and rapid troubleshooting.
+
+---
+
+### 🎓 Education & Professional Development
+
+* **Software Engineering Program** | Zone01 Dakar (2022 – Present)  
+  *Three-year project-based software engineering curriculum emphasizing systems engineering, Linux, networking, software architecture, peer review, and autonomous problem solving.*
+* **Bachelor’s Degree in Computer Engineering** | UNIVERSAT Dakar (Graduated 2021)
+
+#### Certifications
+* Google Cybersecurity Professional Certificate (Coursera)
+* EF SET English Certificate (C1 Advanced)
+* Google Project Management Foundations
 
 ---
 
 ### 📬 Connect With Me
+
 * **LinkedIn:** [linkedin.com/in/aadieng](https://linkedin.com/in/aadieng)
+* **GitHub:** [github.com/aadieng100](https://github.com/aadieng100)
 * **Email:** [diengabdoulaziz110@gmail.com](mailto:diengabdoulaziz110@gmail.com)
-* **Location:** Dakar, Senegal (Open to local, hybrid, and international remote opportunities)
