@@ -19,6 +19,7 @@ Backend Engineer and Technology Entrepreneur with an elite focus on building sec
 ### 🚀 Featured DevSecOps Portfolio Projects
 
 #### 01. Ephemeral Cloud Security Pipeline (Entry-Level Archetype)
+🔗 **[Source Code & Pipeline](https://github.com/aadieng100/devsecops_project01)** | 🛠️ **[CI/CD Workflow Configuration](https://github.com/aadieng100/devsecops_project01/tree/master/.github/workflows)**
 An automated, isolated test-and-destroy AWS pipeline engineering a secure runtime environment for a modern Java application, prioritizing programmatic secrets management and comprehensive vulnerability feedback loops.
 
 * **Architecture & Flow:** Deployed a Java/Spring Boot 3 application coupled with a Dockerized PostgreSQL database on an AWS instance. Implemented strict IAM Instance Profiles to dynamically extract runtime credentials from AWS Secrets Manager, eliminating hardcoded environment variables.
@@ -29,6 +30,7 @@ An automated, isolated test-and-destroy AWS pipeline engineering a secure runtim
 * **Feedback & Teardown:** Engineered an automated failure mechanism that parses security scan outputs, programmatically generates structured threat logs directly to **GitHub Issues**, and executes a fail-safe `terraform destroy` sequence to minimize attack surface and cloud spend.
 
 #### 02. High-Availability Multi-Tier E-Commerce Cluster (Intermediate-Level Archetype)
+🔗 **[Source Code](https://github.com/aadieng100/devsecops_project02)** | 📐 **[Terraform Architecture Files](https://github.com/aadieng100/devsecops_project02/tree/main/terraform)**
 A resilient, highly available headless E-Commerce REST API cluster built on an immutable infrastructure model, enforcing absolute network isolation and edge-to-core security.
 
 * **Infrastructure-as-Code (IaC):** Architected a production-grade AWS environment using an immutable **Terraform** codebase. Managed environments via a **dual-track S3 Remote State** architecture, completely separating volatile staging workspaces from persistent production state files.
