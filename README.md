@@ -32,7 +32,6 @@ Designed and implemented an automated DevSecOps delivery pipeline for a Java app
 
 **Key Capabilities & Security Highlights**
 * **Infrastructure as Code:** Complete infrastructure provisioning handled declaratively through **Terraform**.
-* **Identity & Access:** Configured secure, keyless AWS authentication utilizing **GitHub OIDC federation** to eliminate long-lived credentials.
 * **Static Analysis & SCA:** Embedded **Semgrep** for application source-code analysis and **Trivy** for deep software composition analysis and container scanning.
 * **Policy enforcement:** Utilized **Checkov** to execute static security validation on Terraform manifests prior to cloud deployment.
 * **Dynamic Testing & Feedback:** Automated **OWASP ZAP** dynamic scans against the active runtime environment, engineering automated issue creation and security reporting.
@@ -46,6 +45,7 @@ Architected a multi-tier AWS environment designed around secure networking princ
 
 **Key Capabilities & Security Highlights**
 * **State Isolation:** Infrastructure fully managed through **Terraform** utilizing a multi-environment deployment strategy backed by remote state management via **Amazon S3**.
+* * **Identity & Access:** Configured secure, keyless AWS authentication utilizing **GitHub OIDC federation** to eliminate long-lived credentials.
 * **Network Segregation:** Designed a strict private subnet architecture, placing application nodes and database layers behind an internet-facing **AWS Application Load Balancer (ALB)**.
 * **Data Protection:** Provisioned a highly available **Amazon RDS PostgreSQL** deployment with encryption-at-rest enforced via **AWS KMS Customer-Managed Keys**.
 * **Secret Leak Prevention:** Integrated the **pre-commit framework** executing **Gitleaks** and **Trufflehog** locally to block credential exposure prior to code commits.
