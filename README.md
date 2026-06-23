@@ -2,11 +2,22 @@
 ### DevSecOps Engineer | Cloud Infrastructure | Application Security
 📍 Dakar, Senegal • 🌍 Open to Remote & International Opportunities
 
-Software Engineer specializing in DevSecOps, cloud infrastructure, and application security. I design and implement secure AWS environments, automate infrastructure provisioning with Terraform, and integrate security controls throughout the software delivery lifecycle.
+Software Engineer focused on DevSecOps, cloud infrastructure, and application security. I design and implement secure AWS environments, automate infrastructure provisioning with Terraform, and integrate security controls throughout the software delivery lifecycle.
 
 My work centers on building secure-by-default systems by combining Infrastructure as Code (IaC), CI/CD automation, cloud-native security controls, container hardening, and continuous security validation.
 
 Recently completed the **Google Cybersecurity Professional Certificate** and developed hands-on DevSecOps projects focused on cloud security, CI/CD automation, observability, and infrastructure as code.
+
+Hands-on experience building and securing cloud-native workloads on AWS through Infrastructure as Code, automated CI/CD pipelines, security testing, and observability practices.
+
+---
+
+### 📋 Professional Background
+
+* **Bachelor's Degree in Computer Engineering**
+* **3-Year Software Engineering Program (01 Edu)**
+* **Google Cybersecurity Professional Certificate**
+* **EF SET English Certificate (C1 Advanced)**
 
 ---
 
@@ -35,7 +46,7 @@ Recently completed the **Google Cybersecurity Professional Certificate** and dev
 * **Policy enforcement:** Utilized **Checkov** to execute static security validation on Terraform manifests prior to cloud deployment.
 * **Dynamic Testing & Feedback:** Automated **OWASP ZAP** dynamic scans against the active runtime environment, engineering automated issue creation and security reporting.
 * **Lifecycle Management:** Orchestrated an ephemeral test environment using automated deployment and destruction workflows to minimize attack surface and reduce cloud spend.
-* **Pipeline Security:** CI/CD integration secured via **GitHub Encrypted Secrets** to safely isolate staging deployment environments.
+* **Pipeline Security:** CI/CD workflows protected through GitHub Secrets management and environment isolation controls.
 
 #### 02. Secure Multi-Tier E-Commerce Platform on AWS
 🔗 **[Source Code](https://github.com/aadieng100/devsecops_project02)** | 📐 **[Terraform Architecture](https://github.com/aadieng100/devsecops_project02/tree/main/terraform)**
@@ -48,7 +59,7 @@ Recently completed the **Google Cybersecurity Professional Certificate** and dev
 * **Network Segregation:** Designed a strict private subnet architecture, placing application nodes and database layers behind an internet-facing **AWS Application Load Balancer (ALB)**.
 * **Data Protection:** Provisioned a highly available **Amazon RDS PostgreSQL** deployment with encryption-at-rest enforced via **AWS KMS Customer-Managed Keys**.
 * **Shift-Left Guardrails:** Enforced strict repository security policies by implementing the local **pre-commit framework** running **Gitleaks** and **Trufflehog** to stop secret leaks before code commits.
-* **Edge Profiling:** Conducted targeted **OWASP ZAP** security profiling directly against exposed load balancer endpoints.
+* **Dynamic Security Validation:** Conducted targeted **OWASP ZAP** security profiling directly against exposed load balancer endpoints.
 
 ---
 
