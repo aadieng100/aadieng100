@@ -74,7 +74,7 @@ Hands-on experience building and securing cloud-native workloads on AWS through 
 
 ### 🎓 Education & Professional Development
 
-* **3-Year Software Engineering Program (01 Edu)** | Zone01 Dakar (2022 – Present)  
+* **3-Year Software Engineering Program (01 Edu)** | Zone01 Dakar Complete  
   *Three-year project-based software engineering program emphasizing Linux systems, networking, backend engineering, peer code review, and autonomous problem solving.*
 * **Bachelor's Degree in Computer Engineering** | UNIVERSAT Dakar (Graduated 2021)
 
