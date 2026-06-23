@@ -17,7 +17,7 @@ Recently completed the **Google Cybersecurity Professional Certificate** and act
 | **Cloud & Infrastructure** | AWS (VPC, EC2, ALB, RDS, S3, KMS, IAM, Secrets Manager), Terraform |
 | **DevSecOps & Automation** | GitHub Actions, Docker, CI/CD pipelines, OIDC Federation, Checkov, Pre-Commit Framework |
 | **Security Engineering** | Semgrep (SAST), Trivy (SCA & Container Scanning), OWASP ZAP (DAST), Gitleaks, Trufflehog |
-| **Backend Engineering** | Java, Spring Boot, PostgreSQL, REST APIs |
+| **Backend Engineering** | Java, Spring Boot, PostgreSQL (RDS & Containerized), REST APIs |
 | **Monitoring & Reliability** | Prometheus, Grafana, Linux, Bash |
 
 ---
@@ -27,8 +27,7 @@ Recently completed the **Google Cybersecurity Professional Certificate** and act
 #### 01. Secure Application Delivery Pipeline on AWS
 🔗 **[Source Code](https://github.com/aadieng100/devsecops_project01)** | 🛠️ **[Pipeline Workflow](https://github.com/aadieng100/devsecops_project01/tree/master/.github/workflows)**
 
-**Overview**  
-Designed and implemented an automated DevSecOps delivery pipeline for a Java application running on AWS. The platform integrates multiple security validation layers directly into the development workflow, ensuring vulnerabilities are detected before deployment.
+**Overview** Designed and implemented an automated DevSecOps delivery pipeline for a Java application running on AWS. The platform integrates multiple security validation layers directly into the development workflow, ensuring vulnerabilities are detected before deployment.
 
 **Key Capabilities & Security Highlights**
 * **Infrastructure as Code:** Complete infrastructure provisioning handled declaratively through **Terraform**.
@@ -36,20 +35,20 @@ Designed and implemented an automated DevSecOps delivery pipeline for a Java app
 * **Policy enforcement:** Utilized **Checkov** to execute static security validation on Terraform manifests prior to cloud deployment.
 * **Dynamic Testing & Feedback:** Automated **OWASP ZAP** dynamic scans against the active runtime environment, engineering automated issue creation and security reporting.
 * **Lifecycle Management:** Orchestrated an ephemeral test environment using automated deployment and destruction workflows to minimize attack surface and reduce cloud spend.
+* **Pipeline Security:** CI/CD integration secured via **GitHub Encrypted Secrets** to safely isolate staging deployment environments.
 
 #### 02. High-Availability Multi-Tier Cloud Platform
 🔗 **[Source Code](https://github.com/aadieng100/devsecops_project02)** | 📐 **[Terraform Architecture](https://github.com/aadieng100/devsecops_project02/tree/main/terraform)**
 
-**Overview**  
-Architected a multi-tier AWS environment designed around secure networking principles, infrastructure immutability, and encrypted data services.
+**Overview** Architected a multi-tier AWS environment designed around secure networking principles, infrastructure immutability, and encrypted data services.
 
 **Key Capabilities & Security Highlights**
 * **State Isolation:** Infrastructure fully managed through **Terraform** utilizing a multi-environment deployment strategy backed by remote state management via **Amazon S3**.
-* * **Identity & Access:** Configured secure, keyless AWS authentication utilizing **GitHub OIDC federation** to eliminate long-lived credentials.
+* **Identity & Access:** Configured secure, keyless AWS authentication utilizing **GitHub OIDC federation** to eliminate long-lived credentials.
 * **Network Segregation:** Designed a strict private subnet architecture, placing application nodes and database layers behind an internet-facing **AWS Application Load Balancer (ALB)**.
 * **Data Protection:** Provisioned a highly available **Amazon RDS PostgreSQL** deployment with encryption-at-rest enforced via **AWS KMS Customer-Managed Keys**.
-* **Secret Leak Prevention:** Integrated the **pre-commit framework** executing **Gitleaks** and **Trufflehog** locally to block credential exposure prior to code commits.
-* **Edge Edge Profiling:** Conducted targeted **OWASP ZAP** security profiling directly against exposed load balancer endpoints.
+* **Shift-Left Guardrails:** Enforced strict repository security policies by implementing the local **pre-commit framework** running **Gitleaks** and **Trufflehog** to stop secret leaks before code commits.
+* **Edge Profiling:** Conducted targeted **OWASP ZAP** security profiling directly against exposed load balancer endpoints.
 
 ---
 
