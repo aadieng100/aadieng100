@@ -6,7 +6,7 @@ Software Engineer specializing in DevSecOps, cloud infrastructure, and applicati
 
 My work centers on building secure-by-default systems by combining Infrastructure as Code (IaC), CI/CD automation, cloud-native security controls, container hardening, and continuous security validation.
 
-Recently completed the **Google Cybersecurity Professional Certificate** and actively building production-inspired DevSecOps platforms focused on security, automation, observability, and operational resilience.
+Recently completed the **Google Cybersecurity Professional Certificate** and developed hands-on DevSecOps projects focused on cloud security, CI/CD automation, observability, and infrastructure as code.
 
 ---
 
@@ -37,7 +37,7 @@ Recently completed the **Google Cybersecurity Professional Certificate** and act
 * **Lifecycle Management:** Orchestrated an ephemeral test environment using automated deployment and destruction workflows to minimize attack surface and reduce cloud spend.
 * **Pipeline Security:** CI/CD integration secured via **GitHub Encrypted Secrets** to safely isolate staging deployment environments.
 
-#### 02. High-Availability Multi-Tier Cloud Platform
+#### 02. Secure Multi-Tier E-Commerce Platform on AWS
 🔗 **[Source Code](https://github.com/aadieng100/devsecops_project02)** | 📐 **[Terraform Architecture](https://github.com/aadieng100/devsecops_project02/tree/main/terraform)**
 
 **Overview** Architected a multi-tier AWS environment designed around secure networking principles, infrastructure immutability, and encrypted data services.
@@ -63,13 +63,13 @@ Recently completed the **Google Cybersecurity Professional Certificate** and act
 
 ### 🎓 Education & Professional Development
 
-* **Software Engineering Program** | Zone01 Dakar (2022 – Present)  
-  *Three-year project-based software engineering curriculum emphasizing systems engineering, Linux, networking, software architecture, peer review, and autonomous problem solving.*
-* **Bachelor’s Degree in Computer Engineering** | UNIVERSAT Dakar (Graduated 2021)
+* **3-Year Software Engineering Program (01 Edu)** | Zone01 Dakar (2022 – Present)  
+  *Three-year project-based software engineering program emphasizing Linux systems, networking, backend engineering, peer code review, and autonomous problem solving.*
+* **Bachelor's Degree in Computer Engineering** | UNIVERSAT Dakar (Graduated 2021)
 
-#### Certifications
-* Google Cybersecurity Professional Certificate (Coursera)
-* EF SET English Certificate (C1 Advanced)
+#### Core Credentials & Certifications
+* **Google Cybersecurity Professional Certificate** (Coursera)
+* **EF SET English Certificate (C1 Advanced)**
 * Google Project Management Foundations
 
 ---
