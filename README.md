@@ -84,9 +84,7 @@ Hands-on experience building and securing cloud-native workloads on AWS through 
 * Google Project Management Foundations
 
 ---
-
 ### 📬 Connect With Me
-
 * **LinkedIn:** [linkedin.com/in/aadieng](https://linkedin.com/in/aadieng)
 * **GitHub:** [github.com/aadieng100](https://github.com/aadieng100)
 * **Email:** [diengabdoulaziz110@gmail.com](mailto:diengabdoulaziz110@gmail.com)
