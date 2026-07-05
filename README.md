@@ -1,92 +1,99 @@
 # Abdoul Aziz Dieng
-### DevSecOps Engineer | Cloud Infrastructure | Application Security
-📍 Dakar, Senegal • 🌍 Open to Remote & International Opportunities
+### Cloud Enablement / Platform DevSecOps Engineer
+Dakar, Senegal - Open to Remote & International Opportunities
 
-Software Engineer focused on DevSecOps, cloud infrastructure, and application security. I design and implement secure AWS environments, automate infrastructure provisioning with Terraform, and integrate security controls throughout the software delivery lifecycle.
+I build AWS cloud delivery workflows that help engineering teams ship reliably with reusable infrastructure patterns, CI/CD automation, secure defaults, observability, and clear developer documentation.
 
-My work centers on building secure-by-default systems by combining Infrastructure as Code (IaC), CI/CD automation, cloud-native security controls, container hardening, and continuous security validation.
-
-Recently completed the **Google Cybersecurity Professional Certificate** and developed hands-on DevSecOps projects focused on cloud security, CI/CD automation, observability, and infrastructure as code.
-
-Hands-on experience building and securing cloud-native workloads on AWS through Infrastructure as Code, automated CI/CD pipelines, security testing, and observability practices.
+My work sits at the intersection of software engineering, cloud infrastructure, DevSecOps, and developer enablement. I focus on making cloud environments repeatable, auditable, and developer-friendly through Terraform, GitHub Actions, AWS IAM/OIDC access patterns, security validation gates, and practical troubleshooting documentation.
 
 ---
 
-### 📋 Professional Background
-
-* **Bachelor's Degree in Computer Engineering**
-* **3-Year Software Engineering Program (01 Edu)**
-* **Google Cybersecurity Professional Certificate**
-* **EF SET English Certificate (C1 Advanced)**
-
----
-
-### 🛠️ Core Technologies
+## Core Technologies
 
 | Category | Stack |
 | :--- | :--- |
-| **Cloud & Infrastructure** | AWS (VPC, EC2, ALB, RDS, S3, KMS, IAM, Secrets Manager), Terraform |
-| **DevSecOps & Automation** | GitHub Actions, Docker, CI/CD pipelines, OIDC Federation, Checkov, Pre-Commit Framework |
-| **Security Engineering** | Semgrep (SAST), Trivy (SCA & Container Scanning), OWASP ZAP (DAST), Gitleaks, Trufflehog |
-| **Backend Engineering** | Java, Spring Boot, PostgreSQL (RDS & Containerized), REST APIs |
-| **Monitoring & Reliability** | Prometheus, Grafana, Linux, Bash |
+| Cloud Platform | AWS VPC, EC2, ALB, Auto Scaling Groups, RDS PostgreSQL, S3, KMS, IAM, Secrets Manager, Route 53, Elastic Beanstalk, Amplify |
+| Infrastructure as Code | Terraform, reusable modules, remote S3 backend, environment roots, infrastructure hardening |
+| CI/CD & Developer Enablement | GitHub Actions, AWS CodePipeline, OIDC Federation, branch protection gates, deployment documentation, self-service workflows |
+| Security Guardrails | Semgrep, Trivy, Checkov, OWASP ZAP, Gitleaks, Trufflehog, SAST/SCA/DAST/IaC scanning |
+| Backend & Runtime | Java, Spring Boot, PostgreSQL, Docker, Docker Compose, Linux, Bash |
+| Observability & Troubleshooting | Prometheus, Grafana, VPC Flow Logs, health checks, runtime logs, pipeline debugging |
 
 ---
 
-### 🚀 Featured Projects
+## Featured Projects
 
-#### 01. Secure Application Delivery Pipeline on AWS
-🔗 **[Source Code](https://github.com/aadieng100/devsecops_project01)** | 🛠️ **[Pipeline Workflow](https://github.com/aadieng100/devsecops_project01/tree/master/.github/workflows)**
+### 01. Multi-Tier AWS Cloud Platform & Terraform Pattern Library
+**Repository:** [devsecops_project02](https://github.com/aadieng100/devsecops_project02)  
+**Focus:** AWS platform engineering, Terraform modules, developer self-service, OIDC, ALB/ASG/RDS
 
-**Overview** Designed and implemented an automated DevSecOps delivery pipeline for a Java application running on AWS. The platform integrates multiple security validation layers directly into the development workflow, ensuring vulnerabilities are detected before deployment.
+A cloud enablement project for a headless e-commerce API built around reusable Terraform modules, dev/staging environment roots, OIDC-based AWS authentication, ALB + private Auto Scaling Group + isolated RDS architecture, encrypted artifact staging, VPC Flow Logs, runbooks, and developer self-service documentation.
 
-**Key Capabilities & Security Highlights**
-* **Infrastructure as Code:** Complete infrastructure provisioning handled declaratively through **Terraform**.
-* **Static Analysis & SCA:** Embedded **Semgrep** for application source-code analysis and **Trivy** for deep software composition analysis and container scanning.
-* **Policy enforcement:** Utilized **Checkov** to execute static security validation on Terraform manifests prior to cloud deployment.
-* **Dynamic Testing & Feedback:** Automated **OWASP ZAP** dynamic scans against the active runtime environment, engineering automated issue creation and security reporting.
-* **Lifecycle Management:** Orchestrated an ephemeral test environment using automated deployment and destruction workflows to minimize attack surface and reduce cloud spend.
-* **Pipeline Security:** CI/CD workflows protected through GitHub Secrets management and environment isolation controls.
+Key work:
 
-#### 02. Secure Multi-Tier E-Commerce Platform on AWS
-🔗 **[Source Code](https://github.com/aadieng100/devsecops_project02)** | 📐 **[Terraform Architecture](https://github.com/aadieng100/devsecops_project02/tree/main/terraform)**
-
-**Overview** Architected a multi-tier AWS environment designed around secure networking principles, infrastructure immutability, and encrypted data services.
-
-**Key Capabilities & Security Highlights**
-* **State Isolation:** Infrastructure fully managed through **Terraform** utilizing a multi-environment deployment strategy backed by remote state management via **Amazon S3**.
-* **Identity & Access:** Configured secure, keyless AWS authentication utilizing **GitHub OIDC federation** to eliminate long-lived credentials.
-* **Network Segregation:** Designed a strict private subnet architecture, placing application nodes and database layers behind an internet-facing **AWS Application Load Balancer (ALB)**.
-* **Data Protection:** Provisioned a highly available **Amazon RDS PostgreSQL** deployment with encryption-at-rest enforced via **AWS KMS Customer-Managed Keys**.
-* **Shift-Left Guardrails:** Enforced strict repository security policies by implementing the local **pre-commit framework** running **Gitleaks** and **Trufflehog** to stop secret leaks before code commits.
-* **Dynamic Security Validation:** Conducted targeted **OWASP ZAP** security profiling directly against exposed load balancer endpoints.
+- Refactored Terraform into a reusable IaC pattern library with bootstrap, network, IAM, database, compute, and observability modules.
+- Built dev/staging environment roots to support repeatable AWS application environments.
+- Configured OIDC-based keyless AWS authentication for GitHub Actions.
+- Designed private application networking behind an internet-facing ALB with RDS PostgreSQL in isolated database subnets.
+- Implemented encrypted S3 artifact staging with KMS, blocked public access, lifecycle expiry, and EC2 user-data bootstrapping.
+- Added self-service documentation, Terraform module usage docs, runbooks, and troubleshooting guides.
 
 ---
 
-### 🧠 Engineering Principles
+### 02. Ephemeral AWS Developer Platform & Observability Pipeline
+**Repository:** [devsecops_project01](https://github.com/aadieng100/devsecops_project01)  
+**Focus:** PR-triggered AWS environments, CI/CD guardrails, security validation, Prometheus/Grafana observability
 
-* **Security by Design:** Security controls are integrated from development through deployment rather than added after implementation.
-* **Infrastructure as Code:** Cloud infrastructure is version-controlled, repeatable, and auditable through Terraform.
-* **Automation First:** Manual operational processes are minimized through CI/CD pipelines, policy enforcement, and automated validation.
-* **Observability:** Systems are monitored using metrics, dashboards, and alerts to support reliability and rapid troubleshooting.
+A platform-style DevSecOps project that gives developers fast, repeatable feedback before merge. Every pull request triggers a GitHub Actions workflow that provisions a temporary AWS environment with Terraform, validates the live Spring Boot service, runs security and quality gates, captures telemetry, and automatically destroys the infrastructure after execution.
 
----
+Key work:
 
-### 🎓 Education & Professional Development
-
-* **3-Year Software Engineering Program (01 Edu)** | Zone01 Dakar Completed  
-  *Three-year project-based software engineering program emphasizing Linux systems, networking, backend engineering, peer code review, and autonomous problem solving.*
-* **Bachelor's Degree in Computer Engineering** | UNIVERSAT Dakar (Graduated 2021)
-
-#### Core Credentials & Certifications
-* **Google Cybersecurity Professional Certificate** (Coursera)
-* **EF SET English Certificate (C1 Advanced)**
-* Google Project Management Foundations
+- Built PR-triggered GitHub Actions workflows for ephemeral AWS staging environments.
+- Integrated five validation gates: secret scanning, SAST, SCA/container scanning, IaC compliance checks, and OWASP ZAP DAST validation.
+- Managed AWS infrastructure as code including VPC, subnets, route tables, security groups, EC2, encrypted EBS, IAM roles/policies, IAM instance profiles, and Secrets Manager.
+- Implemented runtime secret retrieval through EC2 IAM Instance Profile and AWS Secrets Manager.
+- Added Prometheus/Grafana dashboards for JVM memory, HTTP request rate, database connection pool activity, and runtime health validation.
+- Documented troubleshooting for pipeline failures, cloud-init/user-data issues, health checks, and runtime diagnostics.
 
 ---
 
-### 📬 Connect With Me
+### 03. GuardianPy - Local Security Guardrails for Developers
+**Focus:** Python automation, local security checks, developer feedback
 
-* **LinkedIn:** [linkedin.com/in/aadieng](https://linkedin.com/in/aadieng)
-* **GitHub:** [github.com/aadieng100](https://github.com/aadieng100)
-* **Email:** [diengabdoulaziz110@gmail.com](mailto:diengabdoulaziz110@gmail.com)
+A Python security automation project that helps developers run repeatable local checks before pushing code or triggering CI/CD workflows. The goal is to catch common security issues earlier, improve developer feedback, and support secure SDLC habits from the local development environment.
+
+---
+
+## Professional Background
+
+- Technical Co-Founder & Lead Engineer at KaartSante
+- 3-Year Software Engineering Program - Zone01 Dakar / 01Edu Framework
+- Bachelor's Degree in Computer Engineering & Software Engineering - UNIVERSAT
+- Google Cybersecurity Professional Certificate
+- EF SET English C1 Advanced
+
+---
+
+## Engineering Principles
+
+- **Developer enablement:** the secure path should also be the easiest path.
+- **Infrastructure as Code:** cloud infrastructure should be version-controlled, reviewable, repeatable, and documented.
+- **Automation first:** CI/CD, validation gates, and runbooks reduce manual operational risk.
+- **Secure defaults:** IAM/OIDC, encryption, private networking, and scanning should be built into workflows early.
+- **Troubleshooting culture:** every difficult fix should become clearer documentation for the next developer.
+
+---
+
+## Current Focus
+
+- AWS Associate certification preparation
+- ECS/Fargate deployment patterns with Terraform
+- Deeper platform engineering, observability, and developer self-service workflows
+
+---
+
+## Connect With Me
+
+- LinkedIn: [linkedin.com/in/aadieng](https://linkedin.com/in/aadieng)
+- GitHub: [github.com/aadieng100](https://github.com/aadieng100)
+- Email: [diengabdoulaziz110@gmail.com](mailto:diengabdoulaziz110@gmail.com)
