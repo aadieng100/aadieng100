@@ -101,4 +101,4 @@ A local-first security automation tool that helps developers detect common misco
 
 - LinkedIn: [linkedin.com/in/aadieng](https://linkedin.com/in/aadieng)
 - GitHub: [github.com/aadieng100](https://github.com/aadieng100)
-- Email: [diengaboulaziz110@gmail.com](mailto:diengaboulaziz110@gmail.com)
+- Email: [diengabdoulaziz110@gmail.com](mailto:diengabdoulaziz110@gmail.com)
