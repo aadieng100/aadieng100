@@ -1,11 +1,12 @@
 # Abdoul Aziz Dieng
 
-### Software Engineer — Backend, Algorithms & Performance
+### Software Engineer & Founder of AADSec
 Dakar, Senegal · Open to Remote & International Opportunities
 
-I build and optimize backend systems across Go, Java, Python, and TypeScript — from a Go constraint-satisfaction solver optimized 3,500× (36s → under 10ms) to reproducible Docker-based CI/CD platforms and a full-stack LLM output benchmarking tool.
-
-My focus is on algorithms, performance optimization, debugging, and test-driven systems that behave deterministically — backed by strong CI/CD, container, and cloud delivery practices.
+I build useful software — from a Go constraint-satisfaction solver optimized 3,500×
+(36s → under 10ms) to AADSec, a local-first DevSecOps audit tool now in private beta,
+and reproducible CI/CD platforms. My focus: algorithms, performance, debugging, and
+systems that are secure and deterministic by design.
 
 ---
 
