@@ -1,7 +1,7 @@
 # Abdoul Aziz Dieng
 
 ### Software Engineer & Founder of AADSec
-Dakar, Senegal · Open to Remote & International Opportunities
+Dakar, Senegal (GMT) · Open to Remote & International Opportunities
 
 I build useful software — from a Go constraint-satisfaction solver optimized 3,500×
 (36s → under 10ms) to **AADSec**, a local-first DevSecOps audit tool now in private
@@ -10,8 +10,8 @@ beta, and reproducible CI/CD platforms on AWS.
 My focus: algorithms, performance, debugging, and systems that are secure and
 deterministic by design.
 
-🌐 **AADSec:** [aadsec.xyz](https://aadsec.xyz) — actionable DevSecOps audits without
-uploading your source code.
+🌐 **AADSec:** [aadsec.xyz](https://aadsec.xyz) — security audits without uploading
+your source code · [View a real demo report](https://aadieng100.github.io/aadsec-public/examples/report-demo.html)
 
 ---
 
@@ -19,7 +19,7 @@ uploading your source code.
 
 | Area | Tools |
 | :--- | :--- |
-| Languages | Go, Java, Python, TypeScript, Rust |
+| Languages | Go, Java, Python, TypeScript (Rust in progress — see featured projects) |
 | Backend & Data | Spring Boot, NestJS, Prisma, PostgreSQL, REST APIs |
 | Algorithms & Testing | Data structures, backtracking/DFS, search pruning, unit testing, edge-case validation, debugging |
 | Containers & CI/CD | Docker, Docker Compose, Kubernetes, Helm, GitHub Actions, AWS CodePipeline, ArgoCD |
@@ -40,8 +40,8 @@ A proprietary local-first audit CLI that orchestrates trusted open-source scanne
 
 - Runs scans in ephemeral containers with read-only source mounts; nothing leaves the machine.
 - Generates dual-view reports: executive risk view (P0–P3) and developer view with concrete fixes.
-- Ships as signed binaries with SHA-256 verification, CycloneDX SBOM, and multi-platform installers.
-- Currently in private beta — live demo report available on the repo.
+- Ships as binaries with SHA-256 verification, CycloneDX SBOM, and multi-platform installers.
+- Currently in private beta — [live demo report](https://aadieng100.github.io/aadsec-public/examples/report-demo.html) available.
 
 ---
 
@@ -114,12 +114,13 @@ A local-first CLI tool that detects Dockerfile and Terraform misconfigurations b
 
 - [KubeSecure-GitOps](https://github.com/aadieng100/KubeSecure-GitOps) — Security-hardened GitOps platform on AWS EKS with Helm, ArgoCD, and Terraform.
 - [devsecops_project01](https://github.com/aadieng100/devsecops_project01) — Ephemeral AWS developer environments with Terraform, GitHub Actions, Prometheus, Grafana, and automated teardown.
+- [aadsec-demo-vulnerable](https://github.com/aadieng100/aadsec-demo-vulnerable) — Intentionally vulnerable demo app used to showcase AADSec audit reports (educational use only).
 
 ---
 
 ## Professional Background
 
-- Founder & Creator of AADSec — local-first DevSecOps audit tool ([aadsec.xyz](https://aadsec.xyz))
+- Founder & Creator of AADSec — local-first DevSecOps audits ([aadsec.xyz](https://aadsec.xyz))
 - Technical Co-Founder & Lead Engineer at KaartSanté — digital health platform, Java/Spring Boot backend on AWS
 - Software Engineering Program — Zone01 Dakar / 01Edu Framework (contract-based, project-driven, 50+ projects delivered)
 - B.Sc. Computer Engineering & Software Engineering — UNIVERSAT
@@ -130,15 +131,14 @@ A local-first CLI tool that detects Dockerfile and Terraform misconfigurations b
 
 ## Current Focus
 
-- Growing AADSec from private beta to public launch
-- Backend systems, algorithms, and performance optimization
-- Developer tooling, CLI design, and reproducible engineering environments
-- Secure software delivery and AI evaluation workflows
+- Running beta security audits through AADSec for teams shipping on GitHub, Docker and AWS
+- Open to senior backend / platform software engineering roles (remote)
+- Developer tooling, CLI design, algorithms and performance optimization
 
 ---
 
 ## Contact
 
 - Website: [aadsec.xyz](https://aadsec.xyz)
+- Email: [contact@aadsec.xyz](mailto:contact@aadsec.xyz)
 - LinkedIn: [linkedin.com/in/aadieng](https://linkedin.com/in/aadieng)
-- Email: [diengabdoulaziz110@gmail.com](mailto:diengabdoulaziz110@gmail.com)
