@@ -3,6 +3,15 @@
 ### Software Engineer & Founder of AADSec
 Dakar, Senegal (GMT) · Open to Remote & International Opportunities
 
+<p align="center">
+  <a href="https://ghfind.com/u/aadieng100?ref=badge">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://ghfind.com/api/card/mini/aadieng100?theme=dark" />
+      <img src="https://ghfind.com/api/card/mini/aadieng100?theme=light" alt="GitHub Roast score card" width="440" />
+    </picture>
+  </a>
+</p>
+
 I build useful software — from a Go constraint-satisfaction solver optimized 3,500×
 (36s → under 10ms) to **AADSec**, a local-first DevSecOps audit tool now in private
 beta, and reproducible CI/CD platforms on AWS.
