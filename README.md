@@ -1,17 +1,16 @@
 # Abdoul Aziz Dieng
 
-### Software Engineer & Founder of AADSec
+### Software Engineer & Founder of AADSec (Dieng Tech & Services)
 Dakar, Senegal (GMT) · Open to Remote & International Opportunities
 
 I build useful software — from a Go constraint-satisfaction solver optimized 3,500×
-(36s → under 10ms) to **AADSec**, a local-first DevSecOps audit tool now in private
-beta, and reproducible CI/CD platforms on AWS.
+(36s → under 10ms) to **AADSec**, a local-first DevSecOps security scanner and verified
+remediation platform, and reproducible CI/CD infrastructures on AWS.
 
 My focus: algorithms, performance, debugging, and systems that are secure and
 deterministic by design.
 
-🌐 **AADSec:** [aadsec.xyz](https://aadsec.xyz) — security audits without uploading
-your source code · [View a real demo report](https://aadieng100.github.io/aadsec-public/examples/report-demo.html)
+🌐 **AADSec:** [aadsec.xyz](https://aadsec.xyz) — offline security audits & verified AI remediation without uploading your full source code · [View a real demo report](https://aadieng100.github.io/aadsec-public/examples/report-demo.html)
 
 ---
 
@@ -20,28 +19,28 @@ your source code · [View a real demo report](https://aadieng100.github.io/aadse
 | Area | Tools |
 | :--- | :--- |
 | Languages | Go, Java, Python, TypeScript (Rust in progress — see featured projects) |
-| Backend & Data | Spring Boot, NestJS, Prisma, PostgreSQL, REST APIs |
+| Backend & Data | Spring Boot, NestJS, Prisma, PostgreSQL, DynamoDB, REST APIs |
 | Algorithms & Testing | Data structures, backtracking/DFS, search pruning, unit testing, edge-case validation, debugging |
 | Containers & CI/CD | Docker, Docker Compose, Kubernetes, Helm, GitHub Actions, AWS CodePipeline, ArgoCD |
-| Cloud & IaC | AWS (EKS, EC2, ALB, RDS, S3, IAM, KMS), Terraform, Linux, Bash |
-| Security | SAST, SCA, DAST, secret scanning, Semgrep, Trivy, Checkov, Gitleaks, OWASP ZAP |
+| Cloud & IaC | AWS (Lambda, EKS, EC2, ALB, RDS, S3, IAM, KMS), Terraform, Linux, Bash |
+| Security | SAST, SCA, IaC & secret scanning (Opengrep, gosec, Bandit, Trivy, Checkov, Gitleaks), CISA KEV / FIRST EPSS |
 | Observability | Prometheus, Grafana, logging, health checks, runbooks |
 
 ---
 
 ## Featured Projects
 
-### 01. AADSec — Local-First DevSecOps Audit Tool (Founder)
+### 01. AADSec — Local-First DevSecOps Scanner & Verified Remediation Agent (Founder)
 
 **Website:** [aadsec.xyz](https://aadsec.xyz) · **Repository:** [aadsec-public](https://github.com/aadieng100/aadsec-public)  
-**Focus:** Product Engineering, Security Tooling, CLI Design, Docker, CI/CD
+**Focus:** Product Engineering, Defensive Security Tooling (Blue Team), Go CLI Design, Docker Isolation, Determinism
 
-A proprietary local-first audit CLI that orchestrates trusted open-source scanners (Gitleaks, Trivy, Semgrep, Checkov) over a codebase, prioritizes findings, and produces actionable reports — without uploading source code.
+A local-first DevSecOps platform combining a **free unlimited offline scanner (`aadsec`)** with a **paid verified remediation agent (`aadsec-agent`)** that patches vulnerabilities and proves nothing broke — without uploading full repositories.
 
-- Runs scans in ephemeral containers with read-only source mounts; nothing leaves the machine.
-- Generates dual-view reports: executive risk view (P0–P3) and developer view with concrete fixes.
-- Ships as binaries with SHA-256 verification, CycloneDX SBOM, and multi-platform installers.
-- Currently in private beta — [live demo report](https://aadieng100.github.io/aadsec-public/examples/report-demo.html) available.
+- **Offline Isolated Detection (`aadsec scan`):** Orchestrates trusted open-source engines (Gitleaks, Trivy, Opengrep, gosec, Bandit, Checkov) inside a hardened ephemeral container (`--network none`, `--read-only`, `--cap-drop=ALL`) with read-only source mounts.
+- **Exploitability & Standalone Reporting:** Deduplicates findings by canonical CWE, enriches risks offline with **CISA KEV** and **FIRST EPSS** exploitability data (P0–P3), and outputs a self-contained dual-view HTML report (executive risk view & engineering remediation view).
+- **Verified AI Remediation (`aadsec-agent`):** Redacts secrets locally, requires explicit single-use administrator consent, validates structural patch edits via `git apply --check`, and runs a double isolated container re-scan to verify `NOT_DETECTED_AFTER_PATCH` with zero regressions before any atomic `apply` (with out-of-tree backup & `undo`).
+- **Supply-Chain Integrity:** Ships as zero-network-import Go binaries with SHA-256 verification, CycloneDX SBOM, and multi-architecture container runners — [live demo report](https://aadieng100.github.io/aadsec-public/examples/report-demo.html).
 
 ---
 
@@ -120,7 +119,7 @@ A local-first CLI tool that detects Dockerfile and Terraform misconfigurations b
 
 ## Professional Background
 
-- Founder & Creator of AADSec — local-first DevSecOps audits ([aadsec.xyz](https://aadsec.xyz))
+- Founder & Creator of AADSec (Dieng Tech & Services) — local-first DevSecOps security audits & verified remediation ([aadsec.xyz](https://aadsec.xyz))
 - Technical Co-Founder & Lead Engineer at KaartSanté — digital health platform, Java/Spring Boot backend on AWS
 - Software Engineering Program — Zone01 Dakar / 01Edu Framework (contract-based, project-driven, 50+ projects delivered)
 - B.Sc. Computer Engineering & Software Engineering — UNIVERSAT
@@ -131,9 +130,9 @@ A local-first CLI tool that detects Dockerfile and Terraform misconfigurations b
 
 ## Current Focus
 
-- Running beta security audits through AADSec for teams shipping on GitHub, Docker and AWS
+- Building and shipping AADSec (`aadsec` offline scanner & `aadsec-agent` verified remediation) for engineering teams shipping on GitHub, Docker, and AWS
 - Open to senior backend / platform software engineering roles (remote)
-- Developer tooling, CLI design, algorithms and performance optimization
+- Developer tooling, CLI design, algorithms, and performance optimization
 
 ---
 
@@ -141,4 +140,4 @@ A local-first CLI tool that detects Dockerfile and Terraform misconfigurations b
 
 - Website: [aadsec.xyz](https://aadsec.xyz)
 - Email: [contact@aadsec.xyz](mailto:contact@aadsec.xyz)
-- LinkedIn: [linkedin.com/in/aadieng](https://linkedin.com/in/aadieng)
+- LinkedIn: [linkedin.com/in/aadieng](https://linkedin.com/in/aadieng) · [AADSec on LinkedIn](https://www.linkedin.com/company/aadsec/)
